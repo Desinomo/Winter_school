@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+</style>
+<body>
+  <div class="flash-overlay" id="flash-overlay"></div>
+
+<!-- slideshow -->
+<div class="w3-display-container" id="Slider"> 
+  <!-- menu navigation -->
+  <div class="w3-top" id="menu">
+  <div class="w3-bar" style="font-size: 30px;">
+    <img id="myImage" src="img/2691129.png" alt="snowglode" class="w3-left" style="padding-top: 5px;" onclick="otherfunction()">
+    <a href="#Slider" class="w3-bar-item w3-button menunavigation">Школа програмування</a>
+    <a href="#School" class="w3-bar-item w3-button w3-hide-small w3-right menunavigation" >Секція зимової школи</a>
+    <a href="#Regestration" class="w3-bar-item w3-button w3-hide-small w3-right menunavigation">Реєстрація</a>
+    <a href="#Contacts" class="w3-bar-item w3-button w3-hide-small w3-right menunavigation">Контакти</a>
+    <a href="#news" class="w3-bar-item w3-button w3-hide-small menunavigation w3-right">Новини</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" style="color: #ffffff;" onclick="myF()">&#9776;</a>
+  </div>
+  <!-- dopmenu -->
+    <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" >
+    <a href="#School" class="w3-bar-item w3-button w3-top menupunkt1">Секція зимової школи</a>
+    <a href="#Regestration" class="w3-bar-item w3-button w3-top menupunkt2">Реєстрація</a>
+    <a href="#Contacts" class="w3-bar-item w3-button w3-top menupunkt3">Контакти</a>
+    <a href="#news" class="w3-bar-item w3-button w3-top menupunkt4">Новини</a>
+  </div>
+</div>
+    <!-- text1 and img 1 -->
+        <div class="mySlides">
+            <img class="img" src="img/b.jpg" style="width:100%;">
+            <div class="text1">Зимова школа програмування</div>
+            <div class="text2">Створюємо сайти</div>
+        </div>
+    <!-- text2 and img2 -->
+        <div class="mySlides">
+            <img class="img" src="img/1.jpeg" style="width:100%;" >
+            <div class="text1">Зимова школа програмування</div>
+            <div class="text2">Програмуємо на android</div>
+        </div>
+    <!-- text3 and img3 -->
+        <div class="mySlides">
+            <img class="img" src="img/2.jpeg" style="width:100%;">
+            <div class="text1">Зимова школа програмування</div>
+            <div class="text2">Пишемо код</div>
+        </div>
+    <!-- button left right slide -->
+    <div  id="School" class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="leftbutton" style="font-size: 30px;padding: 0 10px;" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="rightbutton"style="font-size: 30px;padding: 0 10px;" onclick="plusDivs(1)">&#10095;</div>
+    <!-- button go slide -->
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+   
+</div>
+<!-- some text -->
+
+<h1 class="text3" ><img src="img/santa.png" id="myImage1" style="display: none;" onmouseover="changeImage1()" onmouseout="restoreImage1()" >Про школу</h1>
+
+
+          <p class="text4" style="text-indent: 20px;">  Волинський коледж Національного університету харчових технологій запрошує учнів 9-11 класів,
+          учнів професійно-технічних училищ та студентів технікумів та коледжів м. Луцьк взяти участь в II 
+           Зимовій школі програмування.<br>
+          <p class="text4" style="text-indent: 20px;">     УВАГА! Реєстрація на курси почнеться 21 грудня і триватиме до 31 грудня 2018 р.</p>
+          <p class="text5" style="text-indent: 20px;">    Мета школи - надати школярам, учням та студентам можливіть проявити свою майстерність у мистецтві
+          розробки алгоритмів та складанні програм мовами високого рівня, підвищити рівнь знань з предметів, які
+          передбачають програмування та алгоритмізацію.</p>
+           <p class="text5" style="text-indent: 20px;">    Початок занять - 2 січня 2019 року. Тривалість занять - 3 тижні: 9 занять по 2 години в день. Місце 
+           проведення  Зимової  школи - мультимедійні  навчальні  класи  та  комп'ютерні  лабораторії  Волинського 
+           коледжу НУХТ. Заняття проводяться в трьох секціях</p>.
+                   <h2 class="text6">Програма курсів</h2>
+                    
+<!-- accordion1 -->
+<div class="w3-display-container">
+  <div style="position: relative;">
+    <img id="sharf" src="img/sharf.png" style="height: auto; width: 300px; position: absolute; top: -150px; left: 77%; display: none;">
+  </div>
+  <div style="padding-left: 20px; padding-right: 20px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+    <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-light-grey w3-left-align accordeon1-button">
+      <div style="color: rgb(105, 104, 104)">"Секція кодування Android"</div>
+    </button>
+    <div id="Demo1" class="w3-hide w3-container w3-white accordeon1-spisok">
+      <p style="text-indent: 20px; font-size: 20px; color: rgb(138, 136, 136);">
+        У секцію <b>"Кодування андроїд"</b> запрошують учнів 9-11 класів, що немають попереднього досвіду програмування, але мають власний смартфон на платформі Андроїд і бажають навчитися створювати мобільні додатки. Основне завдання секції ознайомити учасників школи з елементами інтерфейсу середовища MIT App Inventor; сформувати поняття проекту та його складових, навички роботи з елементами інтерфейсу; алгоритм створення, тестування, збереження, публікації та встановлення додатку проекту на смартфон. Наприкінці навчання планується проведення WEB-квесту, результати якого будуть враховуватися при формуванні груп на наступні роки навчання.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- accordion2 -->
+    <div style="padding-left: 20px; padding-right: 20px; max-width: 1400px; margin-left: auto; margin-right: auto; padding-top: 10px;">
+    <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-light-grey w3-left-align accordeon-button">
+    <div style="color: rgb(105, 104, 104)">Секція "Олімпійський резерв"</div></button>
+    <div id="Demo2" class="w3-hide w3-container w3-white accordeon-spisok">
+    <p style=" text-indent: 20px; font-size: 20px;color: rgb(138, 136, 136);">Секція<b>"Олімпійський резерв"</b> запрошує учнів та студентів, що мають базові знання 
+      мови програмування С++ (структуру програми та базові керуючі конструкції). Основне завдання секції підготовка до участі у міжнародній олімпіаді з програмування 
+      «The ACM-ICPC International Collegiate Programming Contest», що проводяться під егідою Асоціації обчислювальної техніки (ACM) за участі університета Бейлора 
+      (https://icpc.baylor.edu). Заняття проводять студенти фіналісти Всекураїнської олімпіади з програмування та випускники - учасники Міжнародної олімпіади. 
+      Наприкінці навчання проводиться олімпіада зимової школи. Фіналісти отримують сертифікати, що дозволяють отримати додаткові бали на екзамен.</p>
+    </div></div>
+<!-- accordion3 -->
+<div  id="Regestration" style="padding-left: 20px; padding-right: 20px; max-width: 1400px; margin-left: auto; margin-right: auto; padding-top: 10px;">
+  <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-light-grey w3-left-align accordeon-button">
+  <div style="color: rgb(105, 104, 104)">Секція "Основи Web-дизайну"</button>
+  <div id="Demo3" class="w3-hide w3-container w3-white accordeon-spisok">
+  <p style=" text-indent: 20px; font-size: 20px;color: rgb(138, 136, 136);">Секція <b>"Основи Web-дизайну"</b> запрошує учнів та студентів, що бажають створити власний сайт. Основне завдання секції надати базові знання із основ web-розробки, зокрема курс покриватиме такі теми як перші кроки по запуску сайту, DNS та хостінг, HTML-CSS та JavaScript.
+    Курс проводиться за підтримки фонду BrainBasket (https://brainbasket.org/). Навчальна програма базуються на курсах провідних навчальних закладів світу та визнаних відкритих освітніх ресурсів, зокрема University of London, Microsoft, W3Schools, Mozilla MDN web docs та ін.
+    Заняття в рамках проекту проходитимуть у форматі змішаного навчання (онлайн+офлайн), що передбачає самостійну роботу з лекційним матеріалом, який доступний онлайн,
+    і аудиторну роботу під керівництвом менторів на базі Зимової школи.</p>
+  </div></div>
+
+  <h6 class="text7">УВАГА! Реєстрація на курси почнеться 21 грудня і триватиме до 31 грудня 2018 р.</h6>
+  <!-- cards1 -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; padding-top: 40px;">
+  <div class="w3-container w3-center">
+    <div class="w3-card-4 w3-blue-white card" style="width: 400px;border: 1px solid #696565;border-radius: 10px;" onclick="olymp()">
+      <div class="w3-container w3-center">
+        <img id="myOtherImage" src="img/greenbook.png" alt="book" style="width:70%;height:70%;padding-top: 30px;" >
+        <h5 style="font-weight: 600;">Олімпійський резерв</h5>
+        <div class="w3-section" style="width: auto;padding-left: 10px;padding-right: 10px">
+          <a href="https://docs.google.com/forms/d/1CzIpWZ0VU1fe0NeXwfENdebMx7hxofWXA37uxGacKP0/viewform?edit_requested=true">
+          <button class="w3-button buttoncard" style="background-color: #696565;">Зареєструватись</button></a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!-- cards2 -->
+  <div class="w3-container">
+    <div class="w3-card-4 w3-blue-white card" style="width: 400px;border: 1px solid #696565;border-radius: 10px;" onclick="android()">
+      <div class="w3-container w3-center">
+        <img id="myOtherImage1" src="img/greenmobile.png" alt="mobile" style="width:70%;height:70%;padding-top: 30px;">
+      <h5 style="font-weight: 600;">Кодуємо Android</h5>
+  
+        <div class="w3-section" style="width: auto;padding-left: 10px;padding-right: 10px">
+          <a href="https://docs.google.com/forms/d/1BwtFrV4XgtPBQGq07gUtNokoLv0okKX4EeEsXcki8xI/viewform?edit_requested=true">
+          <button class="w3-button buttoncard" style="background-color: #696565;"><span style="color: white;">Зареєструватись</span></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cards3 -->
+  <div class="w3-container w3-center">
+  
+    <div class="w3-card-4 w3-blue-white card"style="width: 400px;border: 1px solid #696565;border-radius: 10px;" onclick="web()">
+  
+      <div class="w3-container w3-center">
+        <img id="myOtherImage2" src="img/greenpk.png" alt="computer" style="width:70%;height:70%;padding-top: 30px;">
+        <h5 style="font-weight: 600;">Основи Web-сайтів</h5>
+  
+        <div class="w3-section" style="width: auto;padding-left: 10px;padding-right: 10px">
+          <a href="https://docs.google.com/forms/d/1CBVziX4eqh4sO7UkUqq2vNrHFQwnYlSXQW_aB9QVN4g/viewform?edit_requested=true">
+          <button class="w3-button buttoncard" style="background-color: #696565;"><span style="color: white;">Зареєструватись</span></button></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- news -->
+<div id="news" style="text-align: center; padding-top: 100px; font-size: 40px; font-weight: 600;">Новини</div>
+<div class="card1-container" style="padding-top: 40px;">
+  <!-- Перша картка -->
+  <div class="card1">
+    <img src="img/new6.jpg" alt="Зображення 1">
+    <p >Інформація про новину</p>
+    <p id="imageInfo1" onclick="toggleText('stopText1', 'collapseText1', 'imageInfo1')">Детальніше...</p>
+    <div id="stopText1" class="hidden" style="padding-top: 3px;">Учень пише код для сайту, застосовує стилі, та створює скрипт</div>
+    <div id="collapseText1" class="hidden" style="font-weight: 500;" onclick="hideStopAndCollapse('stopText1', 'collapseText1', 'imageInfo1')">Згорнути...</div>
+  </div>
+
+  <!-- Друга картка -->
+  <div class="card1">
+    <img src="img/new7.jpg" alt="Зображення 2">
+    <p >Інформація про новину</p>
+    <p id="imageInfo2" onclick="toggleText('stopText2', 'collapseText2', 'imageInfo2')">Детальніше...</p>
+    <div id="stopText2" class="hidden" style="padding-top: 3px;">Учень переглядає доступну інформацію</div>
+    <div id="collapseText2" class="hidden" style="font-weight: 500;" onclick="hideStopAndCollapse('stopText2', 'collapseText2', 'imageInfo2')">Згорнути...</div>
+  </div>
+
+  <!-- Третя картка -->
+  <div class="card1">
+    <img src="img/new3.jpg" alt="Зображення 3">
+    <p >Інформація про новину</p>
+    <p id="imageInfo3" onclick="toggleText('stopText3', 'collapseText3', 'imageInfo3')">Детальніше...</p>
+    <div id="stopText3" class="hidden" style="padding-top: 3px;">Учень дізнається про щось з усіх доступних джерел</div>
+    <div id="collapseText3" class="hidden" style="font-weight: 500;" onclick="hideStopAndCollapse('stopText3', 'collapseText3', 'imageInfo3')">Згорнути...</div>
+  </div>
+
+  <!-- Четверта картка -->
+  <div class="card1">
+    <img src="img/new4.jpg" alt="Зображення 4">
+    <p >Інформація про новину</p>
+    <p id="imageInfo4" onclick="toggleText('stopText4', 'collapseText4', 'imageInfo4')">Детальніше...</p>
+    <div id="stopText4" class="hidden" style="padding-top: 3px;">Комфорт допомагає концентрації</div>
+    <div id="collapseText4" class="hidden" style="font-weight: 500;" onclick="hideStopAndCollapse('stopText4', 'collapseText4', 'imageInfo4')">Згорнути...</div>
+  </div>
+</div>
+<!-- organization -->
+<h5>Відповідальні особи</h5>
+
+<div class="container">
+  <div class="person">
+    <img src="img/shep.png" alt="Organizator">
+    <div>
+      <p>Викладач<br><span>організатор Зимової школи<br> програмування</span></p>
+    </div>
+  </div>
+
+  <div class="person">
+    <img src="img/IMG_20200329_133746.jpg" alt="Student">
+    <div>
+      <p>Студент<br><span>Розробник сайту</span></p>
+    </div>
+  </div>
+  <!-- <div class="person">
+    <img src="" alt="">
+    <div>
+      <p>Посада<br><span>Додаткова інформація</span></p>
+    </div>
+  </div>
+
+  <div class="person">
+    <img src="" alt="">
+    <div>
+      <p>Посада<br><span>Додаткова інформація</span></p>
+    </div>
+  </div> -->
+</div>
+
+<!-- contacts -->
+
+<div id="Contacts">
+  <div style="text-align: center; padding-top: 100px; font-size: 40px; font-weight: 600;">Контакти</div>
+
+</div>
+<div style="display: flex; flex-wrap: wrap; height: 500px;">
+  <div id="contact-info">
+    <p><i class="fa fa-map" style="color: #ff9100;"></i> вул. Кафедральна, 6, м. Луцьк, Україна, 43016</p>
+    <p><i class="fa fa-vcard-o" style="color: #ff9100;"></i> (0332) 721 217 - приймальна директора ВофК НУХТ</p>
+    <p><i class="fa fa-user" style="color: #ff9100;"></i> 066 079 9579 - Шепелюк Галина Степанівна - організатор Зимової школи</p>
+    <p><i class="fa fa-send" style="color: #ff9100;"></i> vocnuft@gmail.com</p>
+  </div>
+  <div><img id="tree" src="img/tree.png" style="margin-left: 0; display: none;"></div>
+  <div id="map-container">
+    <iframe src="https://snazzymaps.com/embed/114807" class="map"></iframe>
+  </div>
+
+</div>
+  
+<script>
+// navigation
+function myF() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+var menu = document.getElementById("menu");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 50) {
+    menu.classList.add("scrolled");
+  } else {
+    menu.classList.remove("scrolled");
+  }
+});
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+setInterval(function() {
+  plusDivs(1);
+}, 5000);
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+    x.previousElementSibling.style.borderBottom = "1px solid grey";
+    x.previousElementSibling.style.borderBottomLeftRadius = "0"; 
+    x.previousElementSibling.style.borderBottomRightRadius = "0"; 
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+    x.previousElementSibling.style.borderBottom = "3px solid grey";
+    x.previousElementSibling.style.borderBottomLeftRadius = "10px"; 
+    x.previousElementSibling.style.borderBottomRightRadius = "10px"; 
+  }
+  
+  if (x.style.maxHeight) {
+    x.style.maxHeight = null;
+  } else {
+    x.style.maxHeight = x.scrollHeight + "px";
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+  var menuLinks = document.querySelectorAll(".menunavigation");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      var targetId = this.getAttribute("href").substring(1);
+      var targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
+// newyear tematicks
+var image = document.getElementById("myImage");
+var originalImageSrc = "img/2691129.png";
+var newImageSrc = "img/9084817.png";
+var currentImage = "original";
+
+var otherImage = document.getElementById("myOtherImage");
+var otherImageSrc = "img/greenbook.png";
+var newOtherImageSrc = "img/201556.png";
+var currentOtherImage = "original";
+
+var otherImage1 = document.getElementById("myOtherImage1");
+var otherImageSrc1 = "img/greenmobile.png";
+var newOtherImageSrc1 = "img/2097276.png";
+var currentOtherImage1 = "original";
+
+var otherImage2 = document.getElementById("myOtherImage2");
+var otherImageSrc2 = "img/greenpk.png";
+var newOtherImageSrc2 = "img/178389.png";
+var currentOtherImage2 = "original";
+
+function changeImage() {
+    if (currentImage === "original") {
+        image.src = newImageSrc;
+        currentImage = "new";
+    } else {
+        image.src = originalImageSrc;
+        currentImage = "original";
+    }
+}
+
+function changeOtherImage() {
+    if (currentOtherImage === "original") {
+        otherImage.src = newOtherImageSrc;
+        currentOtherImage = "new";
+    } else {
+        otherImage.src = otherImageSrc;
+        currentOtherImage = "original";
+    }
+}
+function changeOtherImage1() {
+    if (currentOtherImage1 === "original") {
+        otherImage1.src = newOtherImageSrc1;
+        currentOtherImage1 = "new";
+    } else {
+        otherImage1.src = otherImageSrc1;
+        currentOtherImage1 = "original";
+    }
+}
+function changeOtherImage2() {
+    if (currentOtherImage2 === "original") {
+        otherImage2.src = newOtherImageSrc2;
+        currentOtherImage2 = "new";
+    } else {
+        otherImage2.src = otherImageSrc2;
+        currentOtherImage2 = "original";
+    }
+}
+function poyava() {
+  var sharf = document.getElementById("sharf");
+
+  if (sharf.style.display === "none") {
+    sharf.style.display = "block";
+  } else {
+    sharf.style.display = "none";
+  }
+}
+function poyava1() {
+  var tree = document.getElementById("tree");
+
+  if (tree.style.display === "none") {
+    tree.style.display = "block";
+  } else {
+    tree.style.display = "none";
+  }
+}
+function poyava2() {
+  var image = document.getElementById("myImage1");
+
+  if (image.style.display === "none") {
+    image.style.display = "inline";
+  } else {
+    image.style.display = "none";
+  }
+}
+function otherfunction() {
+    changeImage();
+    changeOtherImage();
+    changeOtherImage1();
+    changeOtherImage2();
+    poyava();
+    poyava1();
+    poyava2();
+  }
+function changeImage1() {
+      var image = document.getElementById("myImage1");
+      image.src = "img/santaclaud.png"; 
+    }
+
+    function restoreImage1() {
+      var image = document.getElementById("myImage1");
+      image.src = "img/santa.png";
+    }
+    function showImage2() {
+  var secondImage = document.getElementById("secondImage");
+  var animationContainer = document.querySelector(".animation-container");
+  secondImage.style.display = "block";
+
+  setTimeout(function() {
+    animationContainer.classList.add("active");
+  }, 0);
+
+  setTimeout(function() {
+    secondImage.style.display = "none";
+    animationContainer.classList.remove("active");
+  }, 2000);
+}
+function toggleText() {
+    var imageInfo = document.getElementById("imageInfo");
+    var stopText = document.getElementById("stopText");
+    var collapseText = document.getElementById("collapseText");
+
+
+    if (imageInfo.style.display === "none") {
+      imageInfo.style.display = "block";
+      stopText.style.display = "none";
+      collapseText.style.display = "none";
+    } else {
+      imageInfo.style.display = "none";
+      stopText.style.display = "block";
+      collapseText.style.display = "block";
+    }
+  }
+  function toggleText(stopTextId, collapseTextId, imageInfoId) {
+    var stopText = document.getElementById(stopTextId);
+    var collapseText = document.getElementById(collapseTextId);
+    var imageInfo = document.getElementById(imageInfoId);
+
+    stopText.style.display = "block";
+    collapseText.style.display = "block";
+    imageInfo.style.display = "none";
+  }
+
+  function hideStopAndCollapse(stopTextId, collapseTextId, imageInfoId) {
+    var stopText = document.getElementById(stopTextId);
+    var collapseText = document.getElementById(collapseTextId);
+    var imageInfo = document.getElementById(imageInfoId);
+
+    stopText.style.display = "none";
+    collapseText.style.display = "none";
+    imageInfo.style.display = "block";
+  }
+  function android() {
+      window.location.href = "androidd.html";
+    }
+  function olymp() {
+    window.location.href = "olympp.html";
+  }
+  function web() {
+    window.location.href = "webb.html";
+  }
+</script>
+
+</body>
+</html>
